@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Double Klik Event</title>
+        <style>
+          div {
+            background: blue;
+            color: white;
+            height: 100px;
+            width: 150px;
+            float: left;
+            margin-left: 1cm;
+          }
+          div.dbl {
+            background: yellow;
+            color: black;
+          }
+        </style>
+        <script src="jquery-3.6.0.min.js"></script>
+    </head>
+
+  <body>
+    <h4 style="margin: left 40px;">Double Klik Kotak Untuk Mengubah Kotak!</h4>
+    <!--Tempat Kelas Kotak-->
+    <div class="div1"></div> 
+    <div class="div2"></div> 
+    <div class="div3"></div>
+    
+    <script>
+        var divdbl = $( ".div1" ).first();
+        divdbl.dblclick(function() {
+          divdbl.toggleClass( "dbl" );
+        });
+
+        var divdbl1 = $( ".div2" ).first();
+        divdbl1.dblclick(function() {
+          divdbl1.toggleClass( "dbl" );
+        });
+            
+        var divdbl2 = $( ".div3" ).first();
+        divdbl2.dblclick(function() {
+          divdbl2.toggleClass( "dbl" );
+        });
+    </script>
+  </body>
+</html>

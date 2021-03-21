@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                //Fungsi menyembunyikan gambar
+                $(".sembunyi").click(function() {$("#foto").hide("slow") });
+                //Fungsi menampilkan gambar
+                $(".tampil").click(function() {$("#foto").show("slow") });
+            });
+        </script>
+    </head>
+   
+   <body>
+       <!--Button dan Gambar-->
+       <button class="sembunyi">sembunyikan</button>
+       <button class="tampil">tampilkan</button>
+       <p><img id="foto" src="image/kucing.jpg"></p>
+   </body>
+</html>
